@@ -3,7 +3,7 @@ const BASE_URL = `${process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337
 export const getTeacher = async () => {
   const res = await fetch(`${BASE_URL}/teachers?populate=photo`);
   const data = await res.json();
-  return data.data[0];
+  return data.data?.[0] ?? null;
 };
 
 export const getPrices = async () => {
