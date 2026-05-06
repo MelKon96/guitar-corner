@@ -13,7 +13,7 @@ const Hero = ({ teacher }: HeroProps) => {
   const t = useTranslations("hero");
 
   return (
-    <section className="min-h-screen bg-[#FAFAF8] flex items-center justify-center px-4 sm:px-6">
+    <section className="min-h-screen bg-[#FAFAF8] flex items-center justify-center px-4 sm:px-6 pt-[68px] lg:pt-0">
       <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex justify-center">
           <div className="w-full max-w-md flex flex-col items-center text-center gap-6">

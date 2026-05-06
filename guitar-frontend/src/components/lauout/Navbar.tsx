@@ -37,10 +37,6 @@ const Navbar = () => {
       <motion.nav initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.2 }} className={`fixed top-0 pt-3 left-0 right-0 z-50 px-6 py-0 transition-all duration-300 ${scrolled || menuOpen ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"}`}>
         <div className="max-w-6xl mx-auto flex items-center justify-between pr-0 lg:pr-20">
           <a className="flex items-center h-[56px] lg:h-[100px]">
-            {/* Мобильный текстовый логотип */}
-            <span className="lg:hidden text-[11px] font-bold tracking-widest uppercase text-[#1A1A1A]">
-              Guitar Corner Miami
-            </span>
             {/* Десктоп анимированный логотип */}
             <span className="relative w-[160px] h-[100px] overflow-visible hidden lg:block">
               <LogoAnimated />
