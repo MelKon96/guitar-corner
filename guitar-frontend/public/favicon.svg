@@ -1,0 +1,20 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Guitar pick: wide rounded top arc, sides taper to rounded tip -->
+  <path d="M4 10
+    C4 4, 12 2, 16 2
+    C20 2, 28 4, 28 10
+    C28 17, 22 25, 19 28
+    Q16 31, 13 28
+    C10 25, 4 17, 4 10Z"
+    fill="#C8973A"/>
+  <text
+    x="16"
+    y="15"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Arial Black, 'Arial Bold', Arial, sans-serif"
+    font-weight="900"
+    font-size="13"
+    fill="#1A1A1A"
+  >G</text>
+</svg>

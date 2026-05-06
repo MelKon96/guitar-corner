@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "About",
+    "prices": "Prices",
+    "videos": "Videos",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "subtitle": "Guitar Corner Miami",
+    "title": "Learn Guitar",
+    "titleAccent": "The Right Way",
+    "description": "More than 30 years of experience. Private and group lessons for students from 6 years old.",
+    "bookLesson": "Book a Lesson",
+    "viewPortfolio": "View Portfolio",
+    "yearsExp": "Years of experience"
+  },
+  "about": {
+    "label": "About Teacher",
+    "yearsExp": "Years experience",
+    "students": "Students taught",
+    "whatYouLearn": "What you will learn",
+    "items": ["Basic chords and scales", "Music theory fundamentals", "Your favorite songs", "Stage performance", "Improvisation techniques"]
+  },
+  "prices": {
+    "label": "Pricing",
+    "title": "Classes & Prices",
+    "perClass": "/ class",
+    "bookNow": "Book Now",
+    "outOfStock": "Out of Stock",
+    "mostPopular": "Most Popular",
+    "studioTooltip": "Classes take place in our Studio in Hallandale.",
+    "bookingIntent": "Hello! I'd like to sign up for a lesson:"
+  },
+  "videos": {
+    "label": "Portfolio",
+    "title": "Watch Our Students"
+  },
+  "reviews": {
+    "label": "Testimonials",
+    "title": "What Students Say"
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "Our Studio Life"
+  },
+  "contacts": {
+    "label": "Contact",
+    "title": "Get in Touch",
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Hours",
+    "schedule": "Mon-Fri: 9am - 8pm",
+    "scheduleSat": "Sat: 9am - 4pm",
+    "scheduleSun": "Sun: Closed",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Email",
+    "phonePlaceholder": "Phone Number",
+    "messagePlaceholder": "Message (optional)",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent!",
+    "successText": "We will contact you soon.",
+    "errorText": "Something went wrong. Please try again.",
+    "tryAgain": "Try Again",
+    "validationName": "Please enter your name.",
+    "validationEmail": "Please enter a valid email address."
+  },
+  "promo": {
+    "label": "Special Offer",
+    "classes": "Classes",
+    "justFor": "Just for",
+    "perClass": "/ class",
+    "bookNow": "Book Now",
+    "studioTooltip": "Classes take place in our Studio in Hallandale.",
+    "bookingIntent": "Hello! I'd like to sign up for the special offer:"
+  },
+  "footer": {
+    "location": "Miami, FL"
+  }
+}
