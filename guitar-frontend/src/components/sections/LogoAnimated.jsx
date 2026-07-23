@@ -2,35 +2,7 @@
 
 import { useState } from "react";
 
-/*
-  ┌─────────────────────────────────────────────────────────────┐
-  │  УСТАНОВКА ШРИФТОВ  —  добавьте в  app/layout.js:          │
-  │                                                             │
-  │  import { Dancing_Script, Lobster } from 'next/font/google' │
-  │                                                             │
-  │  const dancing = Dancing_Script({                           │
-  │    subsets: ['latin'], weight: ['700'],                     │
-  │    variable: '--font-dancing',                              │
-  │  })                                                         │
-  │  const lobster = Lobster({                                  │
-  │    subsets: ['latin'], weight: ['400'],                     │
-  │    variable: '--font-lobster',                              │
-  │  })                                                         │
-  │                                                             │
-  │  export default function RootLayout({ children }) {         │
-  │    return (                                                 │
-  │      <html className={`${dancing.variable}                  │
-  │                         ${lobster.variable}`}>              │
-  │        ...                                                  │
-  │      </html>                                                │
-  │    )                                                        │
-  │  }                                                          │
-  │                                                             │
-  │  ИСПОЛЬЗОВАНИЕ:                                             │
-  │  import LogoAnimated from '@/components/LogoAnimated'       │
-  │  <LogoAnimated />                                           │
-  └─────────────────────────────────────────────────────────────┘
-*/
+
 
 export default function LogoAnimated() {
   const [animKey, setAnimKey] = useState(0);

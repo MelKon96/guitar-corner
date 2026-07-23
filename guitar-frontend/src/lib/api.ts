@@ -36,3 +36,4 @@ export const getPromo = async () => {
   const data = await res.json();
   return data.data ?? null;
 };
+

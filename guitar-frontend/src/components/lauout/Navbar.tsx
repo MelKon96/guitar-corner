@@ -43,7 +43,7 @@ const Navbar = () => {
             </span>
           </a>
 
-          {/* Desktop links */}
+          {/* Дсктоп ссылки */}
           <div className="hidden lg:flex items-center gap-8">
             {links.map((link) => (
               <a key={link.href} href={link.href} className="text-[#6B6B6B] hover:text-[#1A1A1A] font-medium transition-colors text-sm">
@@ -53,7 +53,7 @@ const Navbar = () => {
             <LanguageSwitcher />
           </div>
 
-          {/* Burger button (только мобильный) */}
+          {/* Burger button */}
           <button onClick={() => setMenuOpen((o) => !o)} aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-lg hover:bg-black/5 transition-colors">
             <span className={`block h-0.5 w-5 bg-[#1A1A1A] rounded transition-all duration-300 ${menuOpen ? "translate-y-2 rotate-45" : ""}`} />
             <span className={`block h-0.5 w-5 bg-[#1A1A1A] rounded transition-all duration-300 ${menuOpen ? "opacity-0 scale-x-0" : ""}`} />
@@ -78,7 +78,7 @@ const Navbar = () => {
                   </motion.li>
                 ))}
               </ul>
-              {/* Переключатель языка внутри мобильного меню */}
+              {/* Переключатель языка внутри мобилки */}
               <div className="px-6 pb-5 pt-1">
                 <LanguageSwitcher />
               </div>

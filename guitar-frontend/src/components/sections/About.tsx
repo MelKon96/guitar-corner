@@ -21,7 +21,7 @@ const About = ({ teacher }: AboutProps) => {
 
         {/* Контент */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* ЛЕВАЯ ЧАСТЬ — строго по центру */}
+          {/*левая часть */}
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="flex justify-center">
             <div className="w-full max-w-sm flex flex-col items-center text-center gap-6">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A]">{teacher?.name}</h2>
@@ -41,7 +41,7 @@ const About = ({ teacher }: AboutProps) => {
             </div>
           </motion.div>
 
-          {/* ПРАВАЯ ЧАСТЬ */}
+          {/* правая часть*/}
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="bg-[#FAFAF8] rounded-3xl lg:rounded-[3rem] p-6 sm:p-8 space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-[#1A1A1A] text-center">{t("whatYouLearn")}</h3>
 
