@@ -8,12 +8,12 @@
 // };
 
 import createMiddleware from "next-intl/middleware";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { routing } from "./i18n/routing";
 
 const handleI18nRouting = createMiddleware(routing);
 
-export default function middleware(request) {
+export default function middleware(request: NextRequest) {
   const response = handleI18nRouting(request);
 
   if (response.headers.has("location")) {
