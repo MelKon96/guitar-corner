@@ -5,30 +5,16 @@
 
 // export const config = {
 //   matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
-// };
-
-import { NextRequest, NextResponse } from 'next/server';
-
-const locales = ['en', 'es', 'fr'];
-const defaultLocale = 'en';
-
-function getLocale(request: NextRequest): string {
-  const acceptLanguage = request.headers.get('accept-language');
-  if (!acceptLanguage) return defaultLocale;
-
-  const preferred = acceptLanguage.split(',')[0].split('-')[0];
-  return locales.includes(preferred) ? preferred : defaultLocale;
-}
+import { NextRequest, NextResponse } from "next/server";
 
 export default function middleware(request: NextRequest) {
-  if (request.nextUrl.pathname === '/') {
-    const locale = getLocale(request);
-    return NextResponse.redirect(new URL(`/${locale}`, request.url));
+  if (request.nextUrl.pathname === "/") {
+    return NextResponse.redirect(new URL("/en", "https://guitar-corner-frontend.onrender.com"));
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/']
+  matcher: ["/"],
 };
