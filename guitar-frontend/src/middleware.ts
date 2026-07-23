@@ -7,29 +7,28 @@
 //   matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 // };
 
-import createMiddleware from "next-intl/middleware";
-import { NextRequest, NextResponse } from "next/server";
-import { routing } from "./i18n/routing";
+import { NextRequest, NextResponse } from 'next/server';
 
-const handleI18nRouting = createMiddleware(routing);
+const locales = ['en', 'es', 'fr'];
+const defaultLocale = 'en';
+
+function getLocale(request: NextRequest): string {
+  const acceptLanguage = request.headers.get('accept-language');
+  if (!acceptLanguage) return defaultLocale;
+
+  const preferred = acceptLanguage.split(',')[0].split('-')[0];
+  return locales.includes(preferred) ? preferred : defaultLocale;
+}
 
 export default function middleware(request: NextRequest) {
-  const response = handleI18nRouting(request);
-
-  if (response.headers.has("location")) {
-    const location = response.headers.get("location");
-
-    if (location) {
-      const url = new URL(location);
-      url.host = request.headers.get("x-forwarded-host") || request.headers.get("host") || url.host;
-
-      return NextResponse.redirect(url);
-    }
+  if (request.nextUrl.pathname === '/') {
+    const locale = getLocale(request);
+    return NextResponse.redirect(new URL(`/${locale}`, request.url));
   }
 
-  return response;
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  matcher: ['/']
 };
