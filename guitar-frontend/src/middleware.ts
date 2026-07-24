@@ -14,7 +14,7 @@ const handleI18nRouting = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
   if (request.nextUrl.pathname === "/") {
-    return NextResponse.redirect(new URL("/en", "https://guitarcornerfrontend.onrender.com"));
+    return NextResponse.redirect(new URL("/en", "https://guitar-corner-frontend.onrender.com"));
   }
 
   return handleI18nRouting(request);
